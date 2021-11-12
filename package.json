@@ -10,9 +10,10 @@
     "e2e": "ng e2e",
     "build:prod": "ng build --prod",
     "dev:ssr": "ng run angular-universal9:serve-ssr",
-    "universal": "npm run build:ssr && npm run serve:ssr",
-    "serve:ssr": "node dist/angular-universal9/server/main.js",
-    "build:ssr": "ng build --prod && ng run angular-universal9:server:production",
+    "build:universal": "npm run build:ssr && npm run serve:ssr",
+    "build:ssr": "ng build --prod && npm run build:server",
+    "build:server": "ng run angular-universal9:server:production",
+    "serve:ssr": "node dist/server/main.js",
     "prerender": "ng run angular-universal9:prerender"
   },
   "dependencies": {
