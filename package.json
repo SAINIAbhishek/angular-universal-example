@@ -8,8 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "universal": "npm run build:ssr && npm run serve:ssr",
+    "build:prod": "ng build --prod",
     "dev:ssr": "ng run angular-universal9:serve-ssr",
+    "universal": "npm run build:ssr && npm run serve:ssr",
     "serve:ssr": "node dist/angular-universal9/server/main.js",
     "build:ssr": "ng build --prod && ng run angular-universal9:server:production",
     "prerender": "ng run angular-universal9:prerender"
