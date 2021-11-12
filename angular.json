@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-universal-example": {
+    "angular-universal9": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-universal-example/browser",
+            "outputPath": "dist/angular-universal9/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-universal-example:build"
+            "browserTarget": "angular-universal9:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-universal-example:build:production"
+              "browserTarget": "angular-universal9:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-universal-example:build"
+            "browserTarget": "angular-universal9:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-universal-example:serve"
+            "devServerTarget": "angular-universal9:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-universal-example:serve:production"
+              "devServerTarget": "angular-universal9:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-universal-example/server",
+            "outputPath": "dist/angular-universal9/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -146,21 +146,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "angular-universal-example:build",
-            "serverTarget": "angular-universal-example:server"
+            "browserTarget": "angular-universal9:build",
+            "serverTarget": "angular-universal9:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-universal-example:build:production",
-              "serverTarget": "angular-universal-example:server:production"
+              "browserTarget": "angular-universal9:build:production",
+              "serverTarget": "angular-universal9:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "angular-universal-example:build:production",
-            "serverTarget": "angular-universal-example:server:production",
+            "browserTarget": "angular-universal9:build:production",
+            "serverTarget": "angular-universal9:server:production",
             "routes": [
               "/"
             ]
@@ -171,5 +171,5 @@
         }
       }
     }},
-  "defaultProject": "angular-universal-example"
+  "defaultProject": "angular-universal9"
 }

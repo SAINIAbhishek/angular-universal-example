@@ -1,5 +1,5 @@
 {
-  "name": "angular-universal-example",
+  "name": "angular-universal9",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,10 +9,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "universal": "npm run build:ssr && npm run serve:ssr",
-    "dev:ssr": "ng run angular-universal-example:serve-ssr",
-    "serve:ssr": "node dist/angular-universal-example/server/main.js",
-    "build:ssr": "ng build --prod && ng run angular-universal-example:server:production",
-    "prerender": "ng run angular-universal-example:prerender"
+    "dev:ssr": "ng run angular-universal9:serve-ssr",
+    "serve:ssr": "node dist/angular-universal9/server/main.js",
+    "build:ssr": "ng build --prod && ng run angular-universal9:server:production",
+    "prerender": "ng run angular-universal9:prerender"
   },
   "dependencies": {
     "@angular/animations": "~9.1.13",

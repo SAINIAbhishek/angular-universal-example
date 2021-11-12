@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-universal-example'`, () => {
+  it(`should have as title 'angular-universal9'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-universal-example');
+    expect(app.title).toEqual('angular-universal9');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-universal-example app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-universal9 app is running!');
   });
 });
