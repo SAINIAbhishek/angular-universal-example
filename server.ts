@@ -4,6 +4,10 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as express from 'express';
 import { join } from 'path';
 
+import {enableProdMode} from '@angular/core';
+
+enableProdMode();
+
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 
