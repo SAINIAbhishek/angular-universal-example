@@ -16,7 +16,7 @@
     "serve:ssr": "node dist/server/main.js",
     "prerender": "ng run angular-universal9:prerender"
   },
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "@angular/animations": "~9.1.13",
     "@angular/common": "~9.1.13",
